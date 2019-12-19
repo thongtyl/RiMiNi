@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PayActivity"
+    android:id="@+id/payment_activity">
+
+    <TextView
+        android:id="@+id/text_actionbar_cart2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/Primary"
+        android:gravity="center"
+        android:text=" Thanh Toán"
+        android:textColor="@color/White"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="688dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_actionbar_cart2"
+        >
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            android:text="Địa chỉ nhận"
+            android:textColor="@color/Black"
+            android:textSize="17dp" />
+
+        <EditText
+            android:id="@+id/edtdiachinhan"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/textView13"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="15dp"
+            android:ems="10"
+            android:textSize="15dp"
+            android:hint="Nhập địa chỉ nhận hàng"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/edtdiachinhan"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Ngày đặt hàng"
+            android:textColor="@color/Black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/txtngaydat"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/textView15"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="15dp"
+            android:textSize="15dp"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/txtngaydat"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Ngày nhận hàng"
+            android:textColor="@color/Black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/txtngaynhan"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/textView16"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="15dp"
+            android:ems="10"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/txtngaynhan"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Phương thức thanh toán"
+            android:textColor="@color/Black"
+            android:textSize="15dp" />
+
+        <RadioGroup
+            android:id="@+id/hinhthucthanhtoan"
+            android:layout_width="266dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView17"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp">
+
+            <RadioButton
+                android:id="@+id/thanhtoankhinhan"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:text="Thanh toán khi nhận hàng"
+                android:textSize="15dp"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/thanhtoanquanganhang"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:text="Thanh toán qua ngân hàng"
+                android:textSize="15dp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnthanhtoandonhang"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/edtstk"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="50dp"
+            android:text="Đặt hàng"
+            android:textAllCaps="false"
+            android:textSize="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/bovien1234blue"
+            android:textColor="@color/White"/>
+
+        <Button
+            android:id="@+id/btnhuydonhang"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/btnthanhtoandonhang"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:text="Hủy"
+            android:textSize="15dp"
+            android:textAllCaps="false"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/bovien1234gray" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

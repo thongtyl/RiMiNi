@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserMnActivity">
+
+    <LinearLayout
+        android:id="@+id/RL_personal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/text_actionbar_personal"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/White"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/image_del_um_avt"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="0dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <Button
+                android:id="@+id/btn_del_um_listorder"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/image_del_um_avt"
+                android:text="Danh sách đơn hàng"
+                android:textColor="@color/White"
+                android:background="@drawable/bovien1234blue"
+                android:textSize="15dp"
+                android:textAllCaps="false"
+                android:layout_marginEnd="30dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center_vertical"
+            android:text="Họ và tên"
+            android:textColor="@color/Black"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/txt_del_um_ten"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center_vertical"
+            android:text="Họ và tên"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView71"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/textView6"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center_vertical"
+            android:text="Số điện thoại"
+            android:textColor="@color/Black"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/txt_del_um_sdt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/textView7"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center_vertical"
+            android:text="Số điện thoại"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView60"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/textView6"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center_vertical"
+            android:text="Địa chỉ"
+            android:textColor="@color/Black"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/txt_del_um_diachi"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/textView7"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center_vertical"
+            android:text="Địa chỉ"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/textView6"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center_vertical"
+            android:text="Ngày sinh"
+            android:textColor="@color/Black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/txt_del_um_ngaysinh"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/textView7"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center_vertical"
+            android:text="Ngày sinh"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            android:layout_below="@+id/textView8"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center_vertical"
+            android:text="Giới tính"
+            android:textColor="@color/Black"
+            android:textSize="15dp" />
+
+        <RadioGroup
+            android:id="@+id/um_rdggioitinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView10"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="0dp">
+
+            <RadioButton
+                android:id="@+id/um_rdb_nam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:checked="true"
+                android:text="Nam" />
+
+            <RadioButton
+                android:id="@+id/um_rdb_nu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Nữ" />
+
+        </RadioGroup>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/btn_del_um_luu"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/bovien1234blue"
+                android:gravity="center"
+                android:text="Cập nhật"
+                android:textAllCaps="false"
+                android:textColor="@color/White"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/btn_del_um_khoa"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bovien1234gray"
+                android:gravity="center"
+                android:text="Khóa"
+                android:textAllCaps="false"
+                android:textColor="@color/Black"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

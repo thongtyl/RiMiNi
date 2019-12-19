@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/additem"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Primary"
+    tools:context=".AddItemActivity">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/quaylaiadditem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:padding="8dp"
+                        android:text="Quay Lại"
+                        android:textColor="#fff"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+
+        <ImageView
+            android:id="@+id/select_image"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@+id/bar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="140dp"
+            android:layout_marginStart="140dp"
+            android:cropToPadding="false"
+            android:scaleType="centerCrop"
+            android:src="@drawable/addbtn" />
+
+        <LinearLayout
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/select_image"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/tensp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/select_image"
+                android:layout_marginBottom="5dp"
+                android:inputType="textMultiLine"
+                android:padding="15dp"
+                android:hint="Nhập tên sản phẩm..."/>
+
+            <EditText
+                android:id="@+id/giasp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tensp"
+                android:inputType="number"
+                android:layout_marginBottom="5dp"
+                android:padding="15dp"
+                android:hint="Nhập giá sản phẩm..."/>
+
+            <EditText
+                android:id="@+id/thuonghieusp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/giasp"
+                android:layout_marginTop="5dp"
+                android:padding="15dp"
+                android:hint="Nhập thương hiệu..."/>
+
+            <EditText
+                android:id="@+id/motasp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/thuonghieusp"
+                android:layout_marginTop="5dp"
+                android:padding="15dp"
+                android:hint="Nhập mô tả.."/>
+
+            <EditText
+                android:id="@+id/kichthuocsp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/motasp"
+                android:layout_marginTop="5dp"
+                android:padding="15dp"
+                android:hint="Nhập kích thước..."/>
+
+            <EditText
+                android:id="@+id/nhacungcapsp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kichthuocsp"
+                android:layout_marginTop="5dp"
+                android:padding="15dp"
+                android:hint="Nhập nhà cung cấp..."/>
+
+            <EditText
+                android:id="@+id/loaisp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nhacungcapsp"
+                android:layout_marginTop="5dp"
+                android:padding="15dp"
+                android:hint="Nhập loại sản phẩm..."/>
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nhacungcapsp"
+                android:layout_marginTop="10dp"
+                android:background="@color/Gray"
+                android:padding="5dp"
+                android:text="Thêm Bag"
+                android:textAllCaps="false"
+                android:textColor="#24CF11"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/btnHuy"
+                android:layout_below="@+id/btnAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:clickable="true"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:text="Hủy"
+                android:textAlignment="center"
+                android:textColor="#0E0D0D"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Gray">
+
+    <TextView
+        android:id="@+id/text_actionbar_personal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:text=" Cá Nhân"
+        android:textColor="@color/White"
+        android:background="@color/Primary"
+        android:gravity="center"
+        android:textSize="20dp"/>
+
+    <RelativeLayout
+        android:id="@+id/RL_personal"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/text_actionbar_personal"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/White">
+
+        <Button
+            android:id="@+id/button_per_det"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/ic_right" />
+
+        <ImageView
+            android:id="@+id/image_avata"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_sp1" />
+
+        <TextView
+            android:id="@+id/text_per_name"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center_vertical"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/text_per_email"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="80dp"
+            android:gravity="center_vertical"
+            android:text="Email" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RL_more"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/RL_personal"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/White">
+
+        <Button
+            android:id="@+id/button_Logout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="40dp"
+            android:background="@color/Red"
+            android:text="Đăng Xuất"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/button_per_cart"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/White"
+            android:gravity="center_vertical"
+            android:text="  Quản lý đơn hàng"
+            android:textAllCaps="false"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/button_per_history"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/button_per_cart"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/White"
+            android:gravity="center_vertical"
+            android:text="  Lịch sử mua hàng"
+            android:textAllCaps="false"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/button_per_address"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/button_per_history"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/White"
+            android:gravity="center_vertical"
+            android:text="  Quản lý địa chỉ"
+            android:textAllCaps="false"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/button_per_support"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/button_per_address"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/White"
+            android:gravity="center_vertical"
+            android:text="  Hỗ trợ khách hàng"
+            android:textAllCaps="false"
+            android:textSize="15dp" />
+    </RelativeLayout>
+</RelativeLayout>

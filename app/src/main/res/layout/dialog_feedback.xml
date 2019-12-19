@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40.5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/Gray">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/White"
+            android:gravity="center"
+            android:text="Đánh giá sản phẩm"
+            android:textColor="@color/Black"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:numStars="5"
+        android:background="@color/White"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp" />
+
+    <EditText
+        android:id="@+id/edt_dialog_noidungfeedback"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint=" Nội dung đánh giá"
+        android:gravity="top"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/gachduoi"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/White">
+
+        <Button
+            android:id="@+id/btn_dialog_guidanhgia"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:text="Gửi"
+            android:textColor="@color/White"
+            android:background="@drawable/bovien1234blue"/>
+
+        <Button
+            android:id="@+id/btn_dialog_huy"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:text="Hủy"
+            android:background="@drawable/bovien1234gray"/>
+    </RelativeLayout>
+</LinearLayout>

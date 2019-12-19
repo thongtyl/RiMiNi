@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:padding="0.5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/White">
+
+        <ImageView
+            android:id="@+id/image_bag"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_2" />
+
+        <TextView
+            android:id="@+id/text_bag_name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@+id/image_bag"
+            android:gravity="center_vertical"
+            android:text="Name"
+            android:textColor="@color/Blue2"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/text_bag_mota"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/text_bag_name"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/image_bag"
+            android:gravity="top"
+            android:text="Mo ta"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/text_bag_price"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/image_bag"
+            android:gravity="center"
+            android:text="Price"
+            android:textColor="@color/Red"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

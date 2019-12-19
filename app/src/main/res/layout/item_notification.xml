@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="152dp"
+    android:padding="0.5dp">
+
+
+    <RelativeLayout
+        android:id="@+id/RL_not_not1"
+        android:layout_width="match_parent"
+        android:layout_height="152dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/White">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30.5dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/Gray">
+
+            <TextView
+                android:id="@+id/text_not1_name"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:gravity="center_vertical"
+                android:text="Notification Name"
+                android:textColor="@color/Black"
+                android:textSize="20dp"
+                android:background="@color/White"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_not1_content"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="50dp"
+            android:text="Notification content" />
+
+    </RelativeLayout>
+</LinearLayout>

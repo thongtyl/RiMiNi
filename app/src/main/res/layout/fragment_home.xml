@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Primary"
+
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/RL_logo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/Primary"
+        android:scaleType="centerCrop">
+
+        <TextView
+            android:id="@+id/editText_search"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/image_logo"
+            android:background="@drawable/bovien1234"
+            android:drawableLeft="@drawable/icons8search20"
+            android:gravity="center_vertical"
+            android:hint="  Bạn tìm gì hôm nay..."
+            android:inputType="textPersonName"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/RL_logo"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <ViewFlipper
+                    android:id="@+id/viewFlipper"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:padding="1dp"
+                    android:scaleType="centerCrop"
+                    android:inAnimation="@anim/nav_default_pop_enter_anim"
+                    android:outAnimation="@anim/nav_default_pop_exit_anim">
+                </ViewFlipper>
+
+                <Button
+                    android:id="@+id/btn_qctruoc"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/ic_left"/>
+
+                <Button
+                    android:id="@+id/btn_qcsau"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/ic_right"/>
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_bag"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="0.5dp"
+                android:layout_marginEnd="0.5dp"
+                android:background="@color/Gray"/>
+            </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+
